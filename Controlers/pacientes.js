@@ -49,6 +49,7 @@ pacientes.post("/", async (req, res) => {
 }); 
 
 // Ruta para ver un paciente por su ID
+
 pacientes.get("/:id", (req, res) => {
     const pacienteId = req.params.id;
     const sql = "SELECT * FROM Pacientes WHERE idPacientes = ?";
@@ -67,7 +68,7 @@ pacientes.get("/:id", (req, res) => {
     });
   });
   
-
+//Ruta para eliminar un Paciente
   pacientes.post("/eliminar", async (req, res) => {
     const pacienteId = req.body.idPacientes;
   
