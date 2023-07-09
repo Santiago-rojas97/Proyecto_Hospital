@@ -44,6 +44,7 @@ doctores.post("/", async (req, res) => {
   });
 
   //Ruta para ver listado de Doctores
+
 doctores.get("/", (req, res) => {
     const sql = "SELECT * FROM Doctores ";
   
@@ -76,6 +77,7 @@ doctores.get("/", (req, res) => {
     });
   });
 
+  //Ruta para eliminar un Doctor por su ID
   doctores.post("/eliminar", async (req, res) => {
     const idDoctor = req.body.idDoctores;
   
