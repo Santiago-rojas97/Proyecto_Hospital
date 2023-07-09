@@ -83,3 +83,8 @@ especialidad)
 
 ![ver_pac](https://github.com/Santiago-rojas97/Proyecto_Hospital/assets/114537793/853c11a8-c0ca-4d13-bf15-b3ecb95afc67)
 
+
+
+# Gracias por su tiempo
+## SIUUU
+![cr7](https://github.com/Santiago-rojas97/Proyecto_Hospital/assets/114537793/cdd904cb-6244-4b11-9b03-6e28ccbcbb8f)
