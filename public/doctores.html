@@ -1,322 +1,257 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Doctores</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/fav.png" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
 
-    <title>Formulario de Doctores</title>
-  </head>
-  <style>
-    .form-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      box-shadow: 0 2px 5px rgba(231, 5, 5, 0.3);
-    }
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Doctores</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/fav.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
 
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+  <title>Formulario de Doctores</title>
+</head>
+<style>
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow: 0 2px 5px rgba(231, 5, 5, 0.3);
+  }
 
-    form {
-      width: 300px;
-      padding: 20px;
-      background-color: #101414;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(228, 154, 154, 0.3);
-    }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 
-    label {
-      display: block;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
+  form {
+    width: 300px;
+    padding: 20px;
+    background-color: #101414;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(228, 154, 154, 0.3);
+  }
 
-    input[type="text"],
-    input[type="date"],
-    input[type="tel"] {
-      width: 100%;
-      padding: 5px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-    }
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
 
-    button[type="submit"] {
-      width: 100%;
-      padding: 10px;
-      background-color: #4caf50;
-      color: rgb(255, 255, 255);
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-    }
+  input[type="text"],
+  input[type="date"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
 
-    button[type="submit"]:hover {
-      background-color: #45a049;
-    }
-   
-  </style>
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
 
-  <body>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid text-bg-primary p-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="22"
-          fill="currentColor"
-          class="bi bi-house-heart-fill"
-          viewBox="2 0 14 14"
-        >
-          <path
-            d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707L7.293 1.5Z"
-          />
-          <path
-            d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9.293Zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018Z"
-          />
-        </svg>
-        <a class="navbar-brand" href="/">Home</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="../doctores.html">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  fill="currentColor"
-                  class="bi bi-person-badge"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
-                  />
-                  <path
-                    d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0h-7zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492V2.5z"
-                  /></svg
-                >MEDICOS</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pacientes.html"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  fill="currentColor"
-                  class="bi bi-people-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
-                  />
-                </svg>
-                PACIENTES</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="/pacientes"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  fill="currentColor"
-                  class="bi bi-chat-left-heart-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm6 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"
-                  />
-                </svg>
-                SERVICIOS
-              </a>
-              <ul class="dropdown-menu text-bg-light p-3">
-                <li>
-                  <a class="dropdown-item" href="../citas.html">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-file-medical"
-                      viewBox="1 0 17 17"
-                    >
-                      <path
-                        d="M8.5 4.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L7 6l-.549.317a.5.5 0 1 0 .5.866l.549-.317V7.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L9 6l.549-.317a.5.5 0 1 0-.5-.866l-.549.317V4.5zM5.5 9a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"
-                      />
-                      <path
-                        d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"
-                      /></svg
-                    >AGENDAR</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-journal-medical"
-                      viewBox="2 0 17 17"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M8 4a.5.5 0 0 1 .5.5v.634l.549-.317a.5.5 0 1 1 .5.866L9 6l.549.317a.5.5 0 1 1-.5.866L8.5 6.866V7.5a.5.5 0 0 1-1 0v-.634l-.549.317a.5.5 0 1 1-.5-.866L7 6l-.549-.317a.5.5 0 0 1 .5-.866l.549.317V4.5A.5.5 0 0 1 8 4zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"
-                      />
-                      <path
-                        d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"
-                      />
-                      <path
-                        d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"
-                      /></svg
-                    >CONSULTAR</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid text-bg-primary p-2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="22" fill="currentColor" class="bi bi-house-heart-fill"
+        viewBox="2 0 14 14">
+        <path
+          d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707L7.293 1.5Z" />
+        <path
+          d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9.293Zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018Z" />
+      </svg>
+      <a class="navbar-brand" href="/">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../doctores.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                class="bi bi-person-badge" viewBox="0 0 16 16">
+                <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path
+                  d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0h-7zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492V2.5z" />
+              </svg>MEDICOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pacientes.html"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                <path
+                  d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+              </svg>
+              PACIENTES</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/pacientes" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                class="bi bi-chat-left-heart-fill" viewBox="0 0 16 16">
+                <path
+                  d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm6 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
+              </svg>
+              SERVICIOS
+            </a>
+            <ul class="dropdown-menu text-bg-light p-3">
+              <li>
+                <a class="dropdown-item" href="../citas.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="currentColor"
+                    class="bi bi-file-medical" viewBox="1 0 17 17">
+                    <path
+                      d="M8.5 4.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L7 6l-.549.317a.5.5 0 1 0 .5.866l.549-.317V7.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L9 6l.549-.317a.5.5 0 1 0-.5-.866l-.549.317V4.5zM5.5 9a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                    <path
+                      d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+                  </svg>AGENDAR</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="currentColor"
+                    class="bi bi-journal-medical" viewBox="2 0 17 17">
+                    <path fill-rule="evenodd"
+                      d="M8 4a.5.5 0 0 1 .5.5v.634l.549-.317a.5.5 0 1 1 .5.866L9 6l.549.317a.5.5 0 1 1-.5.866L8.5 6.866V7.5a.5.5 0 0 1-1 0v-.634l-.549.317a.5.5 0 1 1-.5-.866L7 6l-.549-.317a.5.5 0 0 1 .5-.866l.549.317V4.5A.5.5 0 0 1 8 4zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                    <path
+                      d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
+                    <path
+                      d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
+                  </svg>CONSULTAR</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
-    </nav>
-
-    <div class="d-flex justify-content-center">
-      <!-- Agregamos un contenedor con clase "d-flex justify-content-center" -->
-      <form id="Doctorform" method="POST" action="/doctores">
-        <label for="iddoctores">ID Doctor:</label>
-        <input type="text" id="iddoctores" name="idDoctores" required />
-
-        <label for="namePac">Nombre:</label>
-        <input type="text" id="nameDoc" name="Name_Doc" required />
-
-        <label for="apellidoPac">Apellido:</label>
-        <input type="text" id="apellidoDoc" name="Apellido_Doc" required />
-
-        <label for="correo">Correo Electronico:</label>
-        <input type="email" id="Correo" name="correo" required />
-
-        <label for="Consultorio">Consultorio:</label>
-        <select name="Consultorio" id="Consultorio" required>
-          <option>102</option>
-          <option>104</option>
-          <option>201</option>
-          <option>202</option>
-        </select>
-
-        <label for="especialidades">Id Especialidadd</label>
-        <select name="Especialidades" id="Especialidades">
-          <option title="Cardiologia">1</option>
-          <option title="Ortopedia">2</option>
-          <option title="Fisioterapia">3</option>
-          <option title="Dermatologia">4</option>
-          <option title="Medicina General">5</option></select
-        ><br />
-        <br />
-        <button type="submit">Crear Doctor</button>
-      </form>
-      <form action="/doctores/eliminar" method="POST">
-        <label for="id">ID del Doctor:</label>
-        <input type="text" id="idDoctores" name="idDoctores" required /><br />
-
-        <button type="submit">Eliminar</button>
-      </form>
-      <div id="success-message"></div>
     </div>
+  </nav>
 
-    <script>
-      document
-        .getElementById("Doctorform")
-        .addEventListener("submit", function (event) {
-          event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+  <div class="d-flex justify-content-center">
+    <!-- Agregamos un contenedor con clase "d-flex justify-content-center" -->
+    <form id="Doctorform" method="POST" action="/doctores">
+      <label for="iddoctores">ID Doctor:</label>
+      <input type="text" id="iddoctores" name="idDoctores" required />
 
-          // Mostrar el mensaje de éxito
-          document.getElementById("success-message").style.display = "block";
+      <label for="namePac">Nombre:</label>
+      <input type="text" id="nameDoc" name="Name_Doc" required />
 
-          // Redireccionar al usuario después de un breve retraso
-          setTimeout(function () {
-            window.location.href = "./doctores.html";
-          }, 2000); // Cambia el valor a la cantidad de milisegundos que deseas esperar antes de redireccionar (2 segundos en este ejemplo)
-        });
-      const form = document.getElementById("Doctorform");
+      <label for="apellidoPac">Apellido:</label>
+      <input type="text" id="apellidoDoc" name="Apellido_Doc" required />
 
-      form.addEventListener("submit", async (event) => {
-        event.preventDefault();
+      <label for="correo">Correo Electronico:</label>
+      <input type="email" id="Correo" name="correo" required />
 
-        const idDoctores = document.getElementById("iddoctores").value;
-        const Name_Doc = document.getElementById("nameDoc").value;
-        const Apellido_Doc = document.getElementById("apellidoDoc").value;
-        const Correo_Elec = document.getElementById("Correo").value;
-        const Consultorio = document.getElementById("Consultorio").value;
-        const id_Especialidades =
-          document.getElementById("Especialidades").value;
+      <label for="Consultorio">Consultorio:</label>
+      <select name="Consultorio" id="Consultorio" required>
+        <option>102</option>
+        <option>104</option>
+        <option>201</option>
+        <option>202</option>
+      </select>
 
-        const url = form.getAttribute("action");
-        const options = {
-          method: "POST",
-          body: JSON.stringify({
-            idDoctores,
-            Name_Doc,
-            Apellido_Doc,
-            Correo_Elec,
-            Consultorio,
-            id_Especialidades,
-          }),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        };
+      <label for="especialidades">Id Especialidadd</label>
+      <select name="Especialidades" id="Especialidades">
+        <option title="Cardiologia">1</option>
+        <option title="Ortopedia">2</option>
+        <option title="Fisioterapia">3</option>
+        <option title="Dermatologia">4</option>
+        <option title="Medicina General">5</option>
+        <option title="Medicina Interna">6</option>
+        <option title="Psicologia">7</option>
+        <option title="Odontologia">8</option>
+        <option title="Radiologia ">9</option>
 
-        try {
-          const response = await fetch(url, options);
-          const result = await response.text();
 
-          if (response.ok) {
-            // Datos ingresados correctamente
-            alert("Datos ingresados correctamente");
-          } else {
-            // Error en la respuesta del servidor
-            alert("Error al ingresar los datos");
-          }
-        } catch (error) {
-          console.error(error);
-          alert("Error al enviar el formulario");
-        }
+      </select><br />
+      <br />
+      <button type="submit">Crear Doctor</button>
+    </form>
+    <form action="/doctores/eliminar" method="POST">
+      <label for="id">ID del Doctor:</label>
+      <input type="text" id="idDoctores" name="idDoctores" required /><br />
+
+      <button type="submit">Eliminar</button>
+    </form>
+    <div id="success-message"></div>
+  </div>
+
+  <script>
+    document
+      .getElementById("Doctorform")
+      .addEventListener("submit", function (event) {
+        event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+
+        // Mostrar el mensaje de éxito
+        document.getElementById("success-message").style.display = "block";
+
+        // Redireccionar al usuario después de un breve retraso
+        setTimeout(function () {
+          window.location.href = "./doctores.html";
+        }, 2000); // Cambia el valor a la cantidad de milisegundos que deseas esperar antes de redireccionar (2 segundos en este ejemplo)
       });
-    </script>
-  </body>
+    const form = document.getElementById("Doctorform");
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      const idDoctores = document.getElementById("iddoctores").value;
+      const Name_Doc = document.getElementById("nameDoc").value;
+      const Apellido_Doc = document.getElementById("apellidoDoc").value;
+      const Correo_Elec = document.getElementById("Correo").value;
+      const Consultorio = document.getElementById("Consultorio").value;
+      const id_Especialidades =
+        document.getElementById("Especialidades").value;
+
+      const url = form.getAttribute("action");
+      const options = {
+        method: "POST",
+        body: JSON.stringify({
+          idDoctores,
+          Name_Doc,
+          Apellido_Doc,
+          Correo_Elec,
+          Consultorio,
+          id_Especialidades,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      };
+
+      try {
+        const response = await fetch(url, options);
+        const result = await response.text();
+
+        if (response.ok) {
+          // Datos ingresados correctamente
+          alert("Datos ingresados correctamente");
+        } else {
+          // Error en la respuesta del servidor
+          alert("Error al ingresar los datos");
+        }
+      } catch (error) {
+        console.error(error);
+        alert("Error al enviar el formulario");
+      }
+    });
+  </script>
+</body>
+
 </html>
