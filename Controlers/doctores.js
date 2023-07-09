@@ -1,6 +1,7 @@
 const express = require('express');
 const connection = require('../db');
 const doctores = express.Router();
+doctores.use(express.json()); // Middleware para analizar los datos en formato JSON
 
 // Ruta para crear un doctor
 doctores.post("/", async (req, res) => {
@@ -75,5 +76,18 @@ doctores.get("/", (req, res) => {
     });
   });
 
+  doctores.post("/eliminar", async (req, res) => {
+    const idDoctor = req.body.idDoctores;
+  
+    try {
+      const sql = "DELETE FROM Doctores WHERE idDoctores = ?";
+      await connection.query(sql, [idDoctor]);
+        
+      res.json({ message: `Doctor con ID ${idDoctor} eliminado exitosamente` });
+
+    } catch (err) {
+      res.status(500).json({ error: "Error en el servidor" });
+    }
+  });
 
 module.exports=doctores;
