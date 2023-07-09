@@ -70,3 +70,16 @@ especialidad)
 - Resultado en BD
 
 - ![cita](https://github.com/Santiago-rojas97/Proyecto_Hospital/assets/114537793/cb55a0d3-57dc-457d-9703-88e2a7022c4a)
+
+
+## Ver listado de todos los Doctores y por su ID
+
+- 
+- ![doctores_ver](https://github.com/Santiago-rojas97/Proyecto_Hospital/assets/114537793/3310dfea-9fc9-4e7f-9726-5e1603a6eb36)
+
+
+## Ver listado de  todos los pacientes y por su ID
+
+
+![ver_pac](https://github.com/Santiago-rojas97/Proyecto_Hospital/assets/114537793/853c11a8-c0ca-4d13-bf15-b3ecb95afc67)
+
