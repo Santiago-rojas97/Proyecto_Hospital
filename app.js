@@ -1,18 +1,31 @@
 const express = require("express");
-const bodyParser = require("body-parser");
+
 const app = express();
+
 app.use("/", require("./router"));
+
+const bodyParser = require("body-parser");
+
 app.use(bodyParser.urlencoded({ extended: true }));
+
 app.use(bodyParser.json());
+
 app.use(express.static("public"));
-const connection = require('./db'); // Asegúrate de que la ruta sea correcta
 
+const connection = require('./db'); 
 
+const pacientesController = require("./Controlers/pacientes");
 
+const doctoresContolelr = require("./Controlers/doctores")
 
+app.use(express.json());
+
+app.use('/Pacientes', pacientesController);
+
+app.use('/Doctores', doctoresContolelr);
 
 // Ruta para crear un paciente
-app.post("/Pacientes", async (req, res) => {
+/* app.post("/Pacientes", async (req, res) => {
   try {
     const { idPacientes, Name_Pac, Apellido_Pac, Feha_Nac, Telefono } =
       req.body;
@@ -37,9 +50,10 @@ app.post("/Pacientes", async (req, res) => {
     res.status(500).send("Error al crear el paciente");
   }
 });
+ */
 
 // Ruta para crear un doctor
-app.post("/Doctores", async (req, res) => {
+/* app.post("/Doctores", async (req, res) => {
   try {
     const {
       idDoctores,
@@ -76,9 +90,9 @@ app.post("/Doctores", async (req, res) => {
     console.error(err);
     res.status(500).send("Error al crear el doctor");
   }
-});
+}); */
 
-app.get("/pacientes", (req, res) => {
+/* app.get("/pacientes", (req, res) => {
   const sql = "SELECT * FROM Pacientes ";
 
   connection.query(sql, (err, result) => {
@@ -89,7 +103,7 @@ app.get("/pacientes", (req, res) => {
       res.status(200).json(result);
     }
   });
-});
+}); 
 
 // Ruta para ver un paciente por su ID
 app.get("/pacientes/:id", (req, res) => {
@@ -109,13 +123,13 @@ app.get("/pacientes/:id", (req, res) => {
     }
   });
 });
+*/
 
 
 
 
 
-
-//Ruta para ver listado de Doctores
+/* //Ruta para ver listado de Doctores
 app.get("/doctores", (req, res) => {
   const sql = "SELECT * FROM Doctores ";
 
@@ -146,12 +160,12 @@ app.get("/doctores/:id", (req, res) => {
       }
     }
   });
-});
+}); */
 
 
 
 
-//Ruta para eliminar un Paciente
+/* //Ruta para eliminar un Paciente
 app.use(express.json()); // Middleware para analizar los datos en formato JSON
 
 app.post("/pacientes/eliminar", async (req, res) => {
@@ -168,7 +182,7 @@ app.post("/pacientes/eliminar", async (req, res) => {
     console.error(err);
     res.status(500).json({ error: "Error en el servidor" });
   }
-});
+}); */
 
 app.use(express.json()); // Middleware para analizar los datos en formato JSON
 
