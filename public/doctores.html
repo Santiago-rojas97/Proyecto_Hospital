@@ -145,7 +145,7 @@
 
   <div class="d-flex justify-content-center">
     <!-- Agregamos un contenedor con clase "d-flex justify-content-center" -->
-    <form id="Doctorform" method="POST" action="/doctores">
+    <form id="Doctorform" method="POST" action="/Doctores">
       <label for="iddoctores">ID Doctor:</label>
       <input type="text" id="iddoctores" name="idDoctores" required />
 
@@ -241,12 +241,15 @@
 
         if (response.ok) {
           // Datos ingresados correctamente
+          console.log(idDoctores,Name_Doc,Apellido_Doc,Correo_Elec,Consultorio,id_Especialidades)
           alert("Datos ingresados correctamente");
         } else {
           // Error en la respuesta del servidor
           alert("Error al ingresar los datos");
         }
       } catch (error) {
+        
+        console.log(idDoctores,Name_Doc,Apellido_Doc,Correo_Elec,Consultorio,id_Especialidades)
         console.error(error);
         alert("Error al enviar el formulario");
       }
