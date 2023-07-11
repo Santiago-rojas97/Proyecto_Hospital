@@ -104,6 +104,5 @@ especialidad)
 
 
 # Gracias por su tiempo
-## SIUUU
 ![cr7](https://github.com/Santiago-rojas97/Proyecto_Hospital/assets/114537793/cdd904cb-6244-4b11-9b03-6e28ccbcbb8f)
 
