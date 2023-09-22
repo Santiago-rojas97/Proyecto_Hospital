@@ -1,7 +1,36 @@
 # Bienvenidos :wave:
 Un saludo a mis compañeros y profesores.
 
-# Proyecto_Hospital
+# Instalación
+**Clone el Repo**
+
+`git clone`
+`https://github.com/Santiago-rojas97/Proyecto_Hospital.git`
+
+-Con SSH
+`git@github.com:Santiago-rojas97/Proyecto_Hospital.git`
+
+**Instale las dependencias**
+
+
+`npm install`
+
+**Run Code**
+
+
+`npm start`
+
+# Tecnologías utilizadas :computer:
+- Node
+- Express
+- MySQL
+- Javascript
+- Html, css y bootstrap
+
+![package](https://github.com/Santiago-rojas97/Proyecto_Hospital/assets/114537793/55dbe061-c5ab-4ce6-aa42-750d7a1fc6ca)
+
+
+# Proyecto_Hospital :hospital:
 Mi Aplicativo ejecuta operaciones CRUD por medio de una API REST básica. Permite Realizar lo siguiente:
 - Crear un Doctor con su información personal(SU ID único, Nombre, Apellido, correo Electrónico, consultorio y la opción de elegir 
 especialidad)
@@ -104,6 +133,5 @@ especialidad)
 
 
 # Gracias por su tiempo
-## SIUUU
 ![cr7](https://github.com/Santiago-rojas97/Proyecto_Hospital/assets/114537793/cdd904cb-6244-4b11-9b03-6e28ccbcbb8f)
 
