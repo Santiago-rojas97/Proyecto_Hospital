@@ -18,13 +18,16 @@ const pacientesController = require("./Controlers/pacientes");
 
 const doctoresContolelr = require("./Controlers/doctores")
 
+const citasController= require("./Controlers/citas")
+
 app.use(express.json());
 
 app.use('/Pacientes', pacientesController);
 
 app.use('/Doctores', doctoresContolelr);
 
-// Ruta para crear un paciente
+app.use('/Citas', citasController);
+
 /* app.post("/Pacientes", async (req, res) => {
   try {
     const { idPacientes, Name_Pac, Apellido_Pac, Feha_Nac, Telefono } =
@@ -52,7 +55,6 @@ app.use('/Doctores', doctoresContolelr);
 });
  */
 
-// Ruta para crear un doctor
 /* app.post("/Doctores", async (req, res) => {
   try {
     const {
@@ -125,10 +127,6 @@ app.get("/pacientes/:id", (req, res) => {
 });
 */
 
-
-
-
-
 /* //Ruta para ver listado de Doctores
 app.get("/doctores", (req, res) => {
   const sql = "SELECT * FROM Doctores ";
@@ -162,9 +160,6 @@ app.get("/doctores/:id", (req, res) => {
   });
 }); */
 
-
-
-
 /* //Ruta para eliminar un Paciente
 app.use(express.json()); // Middleware para analizar los datos en formato JSON
 
@@ -184,7 +179,7 @@ app.post("/pacientes/eliminar", async (req, res) => {
   }
 }); */
 
-app.use(express.json()); // Middleware para analizar los datos en formato JSON
+/* app.use(express.json()); // Middleware para analizar los datos en formato JSON
 
 app.post("/doctores/eliminar", async (req, res) => {
   const idDoctor = req.body.idDoctores;
@@ -198,10 +193,10 @@ app.post("/doctores/eliminar", async (req, res) => {
     console.error(err);
     res.status(500).json({ error: "Error en el servidor" });
   }
-});
+}); */
 
 
-// Ruta para crear una cita médica
+/* // Ruta para crear una cita médica
 app.post('/citas', async (req, res) => {
   const { idPaciente, idDoctor, Especialidad, Fecha_Cita } = req.body;
 
@@ -223,10 +218,10 @@ app.post('/citas', async (req, res) => {
     console.error(err);
     res.status(500).json({ error: 'Error en el servidor' });
   }
-});
+}); */
 
 
 // Iniciar el servidor
-app.listen(3000, () => {
-  console.log("Servidor iniciado en http://localhost:3000");
+app.listen(3001, () => {
+  console.log("Servidor iniciado en http://localhost:3001");
 });
